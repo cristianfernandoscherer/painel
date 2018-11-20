@@ -14,13 +14,14 @@ if(!empty($_GET['codigo'])){
 	$retorno = json_decode($result);
 
 	//COOKIE DE 7 DIAS
+	setcookie("token",$retorno->token,strtotime('+7 days'));
 	setcookie("nome",$retorno->nome,strtotime('+7 days'));
 	setcookie("email",utf8_encode($retorno->email),strtotime('+7 days'));
 	setcookie("telefone",$retorno->telefone,strtotime('+7 days'));
 	setcookie("empresa_id",$retorno->empresa_id,strtotime('+7 days'));
 	setcookie("usuario_id",$retorno->usuario_id,strtotime('+7 days'));
 
-	header("Location".URL_BASE."pages/index.php");
+	header("Location:".URL_FRONTEND."pages/index.php");
 
 }else{
 	header("Location:".URL_BASE);

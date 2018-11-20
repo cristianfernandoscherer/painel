@@ -9,5 +9,7 @@
 	//NAVEGACAO
 	define('URL_BASE', 'http://localhost/painel/');
 	define('URL_FRONTEND', 'http://localhost/painel/frontend/');
+	define('URL_LOGIN', 'http://localhost/painel/frontend/pages/login/login.php');
+	
 
 ?>

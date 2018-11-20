@@ -47,7 +47,7 @@
                         <span class='senha-error error'>*Senha inválida</span>
                     </p>
                     <p>
-                        <button ng-click="submit()" />ENTRAR</button>
+                        <button ng-click="submit()" >ENTRAR</button>
                     </p>
                 </form>
             </div>
@@ -58,7 +58,6 @@
     <script type="text/javascript" src="<?php echo URL_FRONTEND ?>js/angular.min.js"></script>
     <script type="text/javascript" src="<?php echo URL_FRONTEND ?>js/md5.js"></script>
     <script type="text/javascript" src="<?php echo URL_FRONTEND ?>pages/login/login.js"></script>
-
 
   </body>
 </html>
